@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--dark-green);
+  color: var(--white);
+  overflow: auto;
+  overflow-y: hidden;
+}
+:root {
+  --green: #056070;
+  --dark-green: #0a1930;
+  --white: #fdffff;
+}
+.header {
+  font-weight: 200;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: var(--green);
+  color: var(--white);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+ overflow: hidden;
+}
+input {
+  width: 100%;
+  display: block;
+  background-color: var(--green);
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px var(--green);
+}
+input::placeholder {
+  color: #bbb;
+}
+input:focus {
+  outline: none;
+}
+.card {
+    display: flex;
+    column-gap: 20px;
+  background-color: var(--green);
+  border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px var(--green);
+
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+.avatar {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  border: 10px solid var(--dark-green);
+}
+.user-info h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.user-info ul {
+    margin-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+.user-info li {
+  display: flex;
+  align-items: center;
+}
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.repo {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--dark-green);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
